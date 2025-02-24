@@ -1,11 +1,12 @@
 import React from 'react'
 
 
-const Button = (props) => {
+const Button = ({icon,text,...rest}) => {
   return (
-    <button className='btn'>
-      {props.text}
-      {props.icon}
+    <button {...rest}className='btn'>
+           {icon}
+
+           {text}
 
    
     </button>
